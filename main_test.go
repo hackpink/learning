@@ -20,6 +20,8 @@ func TestEnEletkorom(t *testing.T) {
 	szoveg2 := "vagyok"
 	fmt.Println(szoveg, kor, szoveg2)
 }
+
+// gyakorlás
 func TestKedvencLovaimNevei(t *testing.T) {
 	fmt.Println(kedvencLovaimNevei())
 }
@@ -41,4 +43,36 @@ func TestFruzsiSzuperPtogramozo(t *testing.T) {
 }
 func TestFruzsiTortEletkora(t *testing.T) {
 	fmt.Println(fruzsiTortEletkora())
+}
+
+// gyakorlás vége
+func TestGetFamily(t *testing.T) {
+	fmt.Println(getFamily("Éva"))
+
+}
+func TestGreeting(t *testing.T) {
+	fmt.Println(greeting("Frida", "Gebri", "de"))
+}
+
+// gyakorlás
+func TestKorNev(t *testing.T) {
+	fmt.Println(korNev("Fruzsi", "Gebri", 11))
+}
+func TestLovakIstaloi(t *testing.T) {
+	fmt.Println(lovakIstaloi("Berci", "Lucifer", "Spirit lovastanyába"))
+}
+func TestRobot(t *testing.T) {
+	fmt.Println(robot(50))
+}
+func TestLoEletkora(t *testing.T) {
+	fmt.Println(loEletkora(5))
+}
+func TestRobotMerete(t *testing.T) {
+	fmt.Println(robotMerete(1))
+}
+func TestTobbFeltetel(t *testing.T) {
+	fmt.Println(tobbFeltetel(20))
+}
+func TestElsoNyeregProject(t *testing.T) {
+	fmt.Println(elsoNyeregProject(""))
 }
