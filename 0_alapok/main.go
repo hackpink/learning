@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math/rand"
+	"time"
+)
 
 func main() {
 }
@@ -73,7 +77,7 @@ func greeting(firstName string, lastName string, country string) string {
 // és egy movement (mozgás) int-et kell visszaadnod visszatérési értékként. Itt is használnod kell majd feltételt
 
 func korNev(firstName string, lastName string, age int) string {
-	return fmt.Sprint("Szia", " ", lastName, " ", firstName, ",", "te ", 11, " ", "éves vagy")
+	return fmt.Sprint("Szia", " ", lastName, " ", firstName, ",", "te ", age, " ", "éves vagy")
 
 }
 func lovakIstaloi(loNev1 string, loNev2 string, sistallo string) string {
@@ -133,4 +137,101 @@ func elsoNyeregProject(nev string) (int, string) {
 		return 120, "-at kell befűznie"
 	}
 	return 170, "-et kell befűznie"
+}
+func loFajtak(fajta string) string {
+	if fajta == "appalusa" {
+		return "fekete pöttyös fehér alapon"
+	} else if fajta == "mustang" {
+		return "lehet bármien színü, kivéve tarka"
+	} else if fajta == "hidegvérü" {
+		return "lehet bármien, de a leggyakoribb a tarka ami annyit tesz, hogy fekete pacás fehér alapon, és szőrös pata"
+	}
+	return "nem lehet tudni mijen, mert nem adtál meg fajtát"
+}
+func loElohelyek(elohelye string) string {
+	if elohelye == "mongolia" {
+		return "valószínüleg telivér"
+	} else if elohelye == "island" {
+		return "izlandon a lovak/pónik többsége izlandi póni a hosszu szőrük miatt ami melegen tartja őket, de akár musztángok is élhetnek ott"
+	}
+	return "nem lehet tudni, hogy mijen őshonos fajta él ott, de ami biztos van az a hidegvéru, mivel ahol megtalálhatóak a lovak ott biztos van hidegvérü, mivel nyugott és erős, szőval tökéletes hegyimentő ló, vagy csak akár oktató ló"
+}
+
+func nevemEsLovamNeve(loNev string) string {
+
+	if loNev == "Stella" {
+		return "Stella gazdája Fruzsina"
+
+	} else {
+		return "Nincs adat a lóról"
+	}
+
+}
+
+func loKengyelBefuzes(emberNev string) int {
+
+	switch emberNev {
+	case "Fruzsi":
+		return 11
+	case "Frida":
+		return 3
+	case "Péter":
+
+		return 15
+	case "Ági":
+		return 13
+	}
+
+	return 0
+}
+
+func tanulas(tantargy int) string {
+
+	switch tantargy {
+
+	case 11:
+		return "töri"
+
+	case 20:
+		return "magyar"
+
+	case 30:
+		return "matek"
+	}
+	return "nincs megadva a 3 helyes szám egyike"
+
+}
+
+func ismetles(switch1 string) string {
+
+	switch switch1 {
+
+	case "switch":
+		return "a switch a gyorsabb változata az if vagy if else ágaknak"
+
+	case "if":
+		return "az if ág több lehetöség kiiratását csinálja"
+
+	default:
+		return "nem tudom megmondani, nem adtál meg megfelelő típust"
+
+	}
+
+}
+
+func gyakorlasIsmetles() {
+
+	i := 1
+
+	for {
+
+		i++
+		kocka := rand.Intn(6) + 1
+		fmt.Print("\r", kocka)
+		time.Sleep(300 * time.Millisecond)
+
+		if i == 7 {
+			break
+		}
+	}
 }

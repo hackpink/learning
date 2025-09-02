@@ -76,3 +76,30 @@ func TestTobbFeltetel(t *testing.T) {
 func TestElsoNyeregProject(t *testing.T) {
 	fmt.Println(elsoNyeregProject(""))
 }
+func TestLoFajtak(t *testing.T) {
+	fmt.Println(loFajtak("telivér"))
+
+}
+func TestLoElohelyek(t *testing.T) {
+	fmt.Println(loElohelyek("magyarország"))
+}
+
+func TestNevemEsLonevem(t *testing.T) {
+	fmt.Println(nevemEsLovamNeve("Ibiza"))
+}
+
+func TestLoKengyelBefuzes(t *testing.T) {
+	fmt.Println(loKengyelBefuzes("Ibiza"))
+}
+
+func TestTanulas(t *testing.T) {
+	fmt.Println(tanulas(30))
+}
+
+func TestIsmetles(t *testing.T) {
+	fmt.Println(ismetles("izland"))
+}
+
+func TestGyakorlasIsmetles(t *testing.T) {
+	gyakorlasIsmetles()
+}
